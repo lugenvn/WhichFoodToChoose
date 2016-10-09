@@ -39,3 +39,6 @@ captures/
 
 # Keystore files
 *.jks
+.idea/vcs.xml
+app/libs/
+app/src/main/java/self/lugen/whichfoodwechoose/ui/fragment/

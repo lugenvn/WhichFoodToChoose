@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 24
@@ -18,6 +19,7 @@ android {
         }
     }
 }
+
 repositories {
     jcenter()
     mavenCentral()
@@ -31,4 +33,5 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
     compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
 }

@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -65,8 +66,9 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @OnClick({R.id.btn_insert_food, R.id.btn_insert_food_type})
+    @OnClick(R.id.btn_insert_food)
     public void onClick(View view) {
+        Log.d("lugen", "onclick");
         switch (view.getId()) {
             case R.id.btn_insert_food:
                 Intent i = new Intent();
